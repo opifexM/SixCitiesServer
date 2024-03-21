@@ -1,0 +1,135 @@
+@host = http://localhost:5001
+@offerId = 65e0f50da45b21568c8c5c35
+@token = eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjY1ZTE0MDg3OGQ1ODU4M2YzYjQ3ZDk4MCIsImVtYWlsIjoiYWxleDIzQGV4YW1wbGUuY29tIiwiaWF0IjoxNzA5MzIwOTgxLCJleHAiOjE3MDk0OTM3ODF9.MinzPY09243qznrA0vUDVXzxYFpUxfGhYs_y43ZI8VsMTR3TmlturjjyXSUV696IdTpQlm_e7QTbU0boxboo0w
+
+# Offer
+## findOffers
+GET {{host}}/offers/?limit=2
+Authorization: Bearer {{token}}
+
+###
+
+## show
+GET {{host}}/offers/{{offerId}}
+Authorization: Bearer {{token}}
+
+###
+
+## create
+POST {{host}}/offers
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "Квартира-4",
+  "type": "apartment",
+  "bedroom": 1,
+  "city": {
+    "name": "Cologne",
+    "location": {
+      "latitude": 12,
+      "longitude": 1
+    }
+  },
+  "description": "description-description",
+  "goods": [],
+  "host": {
+    "name": "Мария Васильева",
+    "email": "alex1@example.com",
+    "avatarUrl": "avatar5.jpg",
+    "password": "123456",
+    "type": "pro"
+  },
+  "isPremium": true,
+  "isFavorite": false,
+  "location": {
+    "latitude": 1,
+    "longitude": 1
+  },
+  "price": 163,
+  "publishDate": "2024-02-20T12:00:00.000Z",
+  "rating": 3,
+  "room": 4,
+  "visitor": 2
+}
+
+###
+
+
+## update
+PATCH {{host}}/offers/{{offerId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "id": "65e21a61a3915daf86e7b791",
+  "rating": 3,
+  "isFavorite": false,
+  "room": 5,
+  "previewImage": "",
+  "images": [],
+  "price": 5000,
+  "title": "12345678901",
+  "isPremium": true,
+  "city": {
+    "name": "Cologne",
+    "location": {
+      "latitude": 50.938361,
+      "longitude": 6.959974
+    }
+  },
+  "location": {
+    "latitude": 50.938361,
+    "longitude": 6.959974
+  },
+  "type": "room",
+  "bedroom": 3,
+  "description": "В этом задании мы потренируемся создавать приватные ресурсы и разберёмся как реализовать в приложении авторизацию. Решить вопрос авторизации можно разными способами. Вы можете выбрать сессии или JWT. Выбор остаётся на ваше усмотрение.",
+  "goods": [
+    "Breakfast",
+    "Laptop friendly workspace",
+    "Towels"
+  ],
+  "host": {
+    "name": "в",
+    "email": "a2@a.ru",
+    "type": "обычный",
+    "avatarUrl": ""
+  },
+  "visitor": 2
+}
+
+###
+
+## delete
+DELETE {{host}}/offers/{{offerId}}
+Content-Type: application/json
+
+###
+
+## getPremium
+GET {{host}}/offers/premium/?cityName=Paris
+
+###
+
+# Favorites
+## getFavorites
+GET {{host}}/offers/favorites?limit=3
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+
+## upload offer image
+POST {{host}}/offers/{{offerId}}/image
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="screen.png"
+Content-Type: image/png
+
+< /Users/opifex/Downloads/SCR-20240123-qkui-1.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###

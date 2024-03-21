@@ -1,0 +1,182 @@
+{
+  "api": {
+    "titles": [
+      "Уютная квартира в центре",
+      "Просторный дом с садом",
+      "Комната в современном стиле",
+      "Роскошный номер в отеле"
+    ],
+    "descriptions": [
+      "Уютная и светлая квартира с новым ремонтом, полностью меблированная. В шаговой доступности от метро и торговых центров.",
+      "Просторная квартира с панорамными окнами, современным дизайном и встроенной техникой на кухне. Идеальный вариант для семьи.",
+      "Комфортабельная студия в центре города с высокоскоростным интернетом и кондиционером. Идеально подходит для студентов или молодых профессионалов.",
+      "Элегантная квартира с двумя спальнями, камином в гостиной и видом на парк. Район с развитой инфраструктурой и удобной транспортной доступностью.",
+      "Современная студия с дизайнерским ремонтом, барной стойкой и встроенными шкафами. Расположена в тихом районе, идеально для тех, кто ценит комфорт и уединение."
+    ],
+    "cities": [
+      {
+        "name": "Paris",
+        "location": {
+          "latitude": 48.85661,
+          "longitude": 2.351499
+        }
+      },
+      {
+        "name": "Cologne",
+        "location": {
+          "latitude": 50.938361,
+          "longitude": 6.959974
+        }
+      },
+      {
+        "name": "Brussels",
+        "location": {
+          "latitude": 50.846557,
+          "longitude": 4.351697
+        }
+      },
+      {
+        "name": "Amsterdam",
+        "location": {
+          "latitude": 52.370216,
+          "longitude": 4.895168
+        }
+      },
+      {
+        "name": "Hamburg",
+        "location": {
+          "latitude": 53.550341,
+          "longitude": 10.000654
+        }
+      },
+      {
+        "name": "Dusseldorf",
+        "location": {
+          "latitude": 51.225402,
+          "longitude": 6.776314
+        }
+      }
+    ],
+    "previewImages": [
+      "previewImage1.jpg",
+      "previewImage2.jpg",
+      "previewImage3.jpg",
+      "previewImage4.jpg",
+      "previewImage5.jpg",
+      "previewImage6.jpg"
+    ],
+    "images": [
+      "image1.jpg",
+      "image2.jpg",
+      "image3.jpg",
+      "image4.jpg",
+      "image5.jpg",
+      "image6.jpg",
+      "image7.jpg",
+      "image8.jpg",
+      "image9.jpg",
+      "image10.jpg"
+    ],
+    "isPremium": [
+      true,
+      false
+    ],
+    "isFavorite": [
+      true,
+      false
+    ],
+    "types": [
+      "apartment",
+      "room",
+      "house",
+      "hotel"
+    ],
+    "goods": [
+      "Wi-Fi",
+      "Посудомоечная машина",
+      "Телевизор",
+      "Кондиционер",
+      "Кухня",
+      "Стиральная машина",
+      "Микроволновая печь",
+      "Холодильник",
+      "Кофемашина",
+      "Гладильная доска с утюгом"
+    ],
+    "hostNames": [
+      "Иван Иванов",
+      "Елена Петрова",
+      "Алексей Смирнов",
+      "Мария Васильева",
+      "Дмитрий Кузнецов"
+    ],
+    "hostEmails": [
+      "ivan@example.com",
+      "elena@example.com",
+      "alexey@example.com",
+      "maria@example.com",
+      "dmitry@example.com"
+    ],
+    "hostAvatarUrls": [
+      "avatar1.jpg",
+      "avatar2.jpg",
+      "avatar3.jpg",
+      "avatar4.jpg",
+      "avatar5.jpg",
+      "avatar6.jpg"
+    ],
+    "hostPasswords": [
+      "password1",
+      "password2",
+      "password3",
+      "password4",
+      "password5"
+    ],
+    "hostTypes": [
+      "обычный",
+      "pro"
+    ],
+    "locations": [
+      {
+        "latitude": 48.8588377,
+        "longitude": 2.2775175
+      },
+      {
+        "latitude": 50.9412784,
+        "longitude": 6.9582814
+      },
+      {
+        "latitude": 50.8503463,
+        "longitude": 4.3517211
+      },
+      {
+        "latitude": 52.3666969,
+        "longitude": 4.8945398
+      },
+      {
+        "latitude": 53.5510846,
+        "longitude": 9.9936819
+      },
+      {
+        "latitude": 51.2277411,
+        "longitude": 6.7734556
+      },
+      {
+        "latitude": 48.856613,
+        "longitude": 2.352222
+      },
+      {
+        "latitude": 50.937531,
+        "longitude": 6.960279
+      },
+      {
+        "latitude": 50.85045,
+        "longitude": 4.34878
+      },
+      {
+        "latitude": 52.370216,
+        "longitude": 4.895168
+      }
+    ]
+  }
+}

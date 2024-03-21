@@ -1,0 +1,21 @@
+@host = http://localhost:5001
+@offerId = 65e0f50da45b21568c8c5c35
+@token = eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjY1ZTE0MDg3OGQ1ODU4M2YzYjQ3ZDk4MCIsImVtYWlsIjoiYWxleDIzQGV4YW1wbGUuY29tIiwiaWF0IjoxNzA5MzE0NTgxLCJleHAiOjE3MDk0ODczODF9.4cQ6ibVVTNQ5sx7pjbmZKjI3H7OcfBPFJDbXw9bwLFZB8w727yOcM1A6Y79teHIlVPr2dbIPColKYRt6dQYEIQ
+# Review
+
+## get
+GET {{host}}/comments/{{offerId}}
+
+###
+
+## create
+POST {{host}}/comments/{{offerId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "comment": "aaaaa12",
+  "rating": 2
+}
+
+###

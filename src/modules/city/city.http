@@ -1,0 +1,14 @@
+@host = http://localhost:5001
+
+# City
+## getAllCities
+GET {{host}}/cities
+Content-Type: application/json
+
+###
+
+## getAllCities
+GET {{host}}/cities
+Content-Type: application/json
+
+###

@@ -1,0 +1,11 @@
+Program for preparing data for a REST API server.
+Example:
+    cli.js --<commands> [--arguments]
+
+Commands:
+    --version         Displays the current version of the program.
+    --help            Provides a guide or reference for using the program, detailing available commands and their functions.
+    --import <path>   Import data from a TSV (Tab-Separated Values) file. Need to specify the file path where TSV file is located.
+    --generate <n> <filepath> <url>
+                      Generates 'n' number of test data sets (rental offers) and saves them to the specified filepath.
+                      The data is fetched from the specified URL.

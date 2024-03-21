@@ -1,0 +1,64 @@
+@host = http://localhost:5001
+@offerId = 65e0f50ba45b21568c8c5987
+@token = eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjY1ZTE0MDg3OGQ1ODU4M2YzYjQ3ZDk4MCIsImVtYWlsIjoiYWxleDIzQGV4YW1wbGUuY29tIiwiaWF0IjoxNzA5MjYxNjcwLCJleHAiOjE3MDk0MzQ0NzB9.yVnHeTxZeNBalQlpP5N2zDWxUiRMkNlZ13Xg3c2STKomo-TXxB8BsfW9Uc8geGJX9jdZ7tqJxnWdcFCgYbzS4Q
+
+# User
+## create
+POST {{host}}/users/
+Content-Type: application/json
+
+{
+  "name": "Мария Васильева",
+  "email": "alex23@example.com",
+  "avatarUrl": "avatar.jpg",
+  "password": "123456",
+  "type": "pro"
+}
+
+###
+
+## login
+POST {{host}}/users/login/
+Content-Type: application/json
+
+{
+  "email": "alex23@example.com",
+  "password": "123456"
+}
+
+###
+
+## check login
+GET {{host}}/users/login/
+Authorization: Bearer {{token}}
+
+###
+
+## upload picture
+POST {{host}}/users/avatar
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="avatar"; filename="screen.png"
+Content-Type: image/png
+
+< /Users/opifex/Downloads/SCR-20240123-qkui-1.png
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+## addFavorite
+POST {{host}}/users/favorites/{{offerId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+
+## deleteFavorite
+
+DELETE {{host}}/users/favorites/{{offerId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
