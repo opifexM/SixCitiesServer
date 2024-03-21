@@ -1,3 +1,5 @@
+[![Node CI](https://github.com/opifexM/SixCitiesServer/actions/workflows/nodejs.yml/badge.svg)](https://github.com/opifexM/SixCitiesServer/actions/workflows/nodejs.yml)
+
 # Six Cities Server
 
 The Six Cities Server is a Node.js-based platform offering affordable travel accommodations via REST API and CLI. It features user authentication, dynamic listings, comments, and favorites, utilizing MongoDB for data management. Designed for efficiency and ease of use, it caters to travelers seeking cost-effective stays.
