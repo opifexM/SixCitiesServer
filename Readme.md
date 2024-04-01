@@ -1,4 +1,5 @@
 [![Node CI](https://github.com/opifexM/SixCitiesServer/actions/workflows/nodejs.yml/badge.svg)](https://github.com/opifexM/SixCitiesServer/actions/workflows/nodejs.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ff4d28b6d81b95e29c6d/maintainability)](https://codeclimate.com/github/opifexM/SixCitiesServer/maintainability)
 
 # Six Cities Server
 
